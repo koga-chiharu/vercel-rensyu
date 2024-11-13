@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css"> 
-    <title>演習1</title>
+    <meta charset="UTF-8" />
+    <title>アコーディオン（サンプル）
+    </title>
+<meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<!-- <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-2-2/css/9-2-2.css"> -->
+<link rel="stylesheet" href="css/styls.css">
 </head>
 
 <body>
-    <div id="container">
-        <p onclick="window.alert('ボタンが押されました');">ボタン1</p>
-        <p id="btn_2">ボタン2</p>
-        <p id="btn_3">ボタン3</p>
-    </div>
-    <script defer src="js/script.js"></script>
-</body>
+<h2>テスト</h2>
+  <ul class="accordion-area">
+      <li>
+          <section>
+            <h3 class="title">Q　予約は出来ますか？</h3>
+            <div class="box">
+              <p>ご予約可能です。 <br>電話予約にて満席の場合が御座いますのでご注意下さい。<br>
+                お席はカウンターではなくテーブル席になる場合がございます。<br>
+                予めご了承ください。</p>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section>
+            <h3 class="title">Q　予算はどのくらいかかりますか？</h3>
+            <div class="box">
+              <p>注文数により前後いたしますが、おひとり様あたりおおよそ￥3,000～￥3,999の範囲でお楽しみいただけます。</p>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section>
+            <h3 class="title">セミナーやイベントの出演を依頼したいのですが</h3>
+            <div class="box ">
+              <p>お問い合わせフォームより日時や内容などをご記入いただきご相談ください。</p>
+            </div>
+          </section>
+          
+        </li>
+      </ul>
+  
 
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <!-- <script type="text/javascript" src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-2-2/js/9-2-2.js"></script> -->
+      <script src="js/script.js"></script>
+</body>
 </html>
